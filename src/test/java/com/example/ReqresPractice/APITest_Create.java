@@ -1,15 +1,11 @@
 package com.example.ReqresPractice;
 
-import groovy.json.JsonParser;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import java.io.*;
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.*;
 
-import static io.restassured.RestAssured.post;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -23,7 +19,6 @@ public class APITest_Create {
 
     public APITest_Create() throws IOException, ParseException {
     }
-    // tests for all scenarios of /api/users
 
     @Test
     public void testCreate_createUserResponseCode() throws IOException {
