@@ -1,0 +1,5 @@
+list_users: "/api/users?page="
+create_user: "/api/users"
+list_singleUser: "/api/users/"
+register_user: "/api/register"
+login_user: "/api/login"

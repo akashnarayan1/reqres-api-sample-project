@@ -1,0 +1,13 @@
+// use Get end_point "https://reqres.in/api/users?page=2"and Post_end point "https://reqres.in/api/users" Method
+    public static void main (String[] args) throws MalformedURLException {
+        String url = "https://reqres.in/api/users?page=2";
+
+        RestAssured.baseURI = url;
+        RequestSpecificationImpl httpsRequest = (RequestSpecificationImpl) RestAssured.given();
+
+        Response response = httpsRequest.request(Method.GET, "");
+        Response response = httpsRequest.get('endpoint');
+        System.out.println("Status: " + response.getStatusCode());
+        System.out.println("Response Pretty: " + response.prettyPrint());
+
+    }

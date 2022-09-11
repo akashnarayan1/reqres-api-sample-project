@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="APITestSuite">
+    <test name="APISuiteName" preserve-order="true" thread-count="10" parallel="methods">
+        <classes>
+            <class name="com.example.ReqresPractice.APITest_ListUsers"/>
+            <class name="com.example.ReqresPractice.APITest_Create"/>
+            <class name="com.example.ReqresPractice.APITest_ListSingleUser"/>
+            <class name="com.example.ReqresPractice.APITest_RegisterUser"/>
+            <class name="com.example.ReqresPractice.APITest_LoginUser"/>
+        </classes>
+    </test>
+</suite>
