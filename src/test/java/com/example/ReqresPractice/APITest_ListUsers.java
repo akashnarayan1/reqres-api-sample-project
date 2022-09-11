@@ -13,7 +13,6 @@ public class APITest_ListUsers {
     public APITest_ListUsers() throws FileNotFoundException {
     }
 
-    // Tests for all scenarios of /api/users?
     @Test
     public void testListUsers_getAllUsers() throws FileNotFoundException {
         Reporter.log("Entered : "+ new Object() {}
@@ -28,7 +27,6 @@ public class APITest_ListUsers {
     @Test
     public void testListUsers_getSpecificPage() throws FileNotFoundException {
         Response response = apiMethods.list_user("list_users", "10");
-        System.out.println(response.prettyPrint());
         assertThat(response.statusCode()).isEqualTo(200);
     }
 }
